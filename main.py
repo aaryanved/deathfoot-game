@@ -29,4 +29,19 @@ for i in range(10):
         pp = attack(pp)
     else:
         bp = defend(bp)
+    if pp > 5:
+        print("Player wins by a Clean Swipe!")
+        break
+    elif bp > 5:
+        print("Bot wins by a Clean Swipe!")
+        break
     turn = not turn
+else:
+    if pp == 5 and bp == 5:
+        print("It's a perfect split! (0.2461 probability!)")
+    elif pp > bp:
+        print("Player wins with higher points!")
+    elif bp > pp:
+        print("BOT wins with higher points!")
+    else:
+        print("It's a draw!")
