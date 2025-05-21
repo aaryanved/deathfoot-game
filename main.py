@@ -1,13 +1,18 @@
 import random
+from Sequences.attack import attack
+from Sequences.defend import defend
 
 pp = 0
 bp = 0
+
 print("Welcome to Deathfoot!")
 print("You are the player, and the computer is the opponent.")
 print("You will take turns to play, and the first player to reach 5 points wins.")
 print("Time to do a Coin flip! Guess 1 or 2 to see who starts.")
+print("")
 try:
     ip = int(input("Your guess: "))
+    print("")
 except ValueError:
     print("Invalid input. Exiting.")
     exit(0)
@@ -18,3 +23,10 @@ if ip == coin:
 else:
     print("Bot starts first!")
     turn = False
+
+for i in range(10):
+    if turn:
+        pp = attack(pp)
+    else:
+        bp = defend(bp)
+    turn = not turn
