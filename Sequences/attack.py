@@ -9,6 +9,6 @@ if n < 4:
     else:
         print("You didn't score.")
         print("")
-elif n is not None:
+else:
     print("Idiot boy. Game crash because of your foolishness.")
     exit(0)
