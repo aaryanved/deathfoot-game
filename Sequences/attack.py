@@ -1,6 +1,8 @@
 import random
 
 def attack(pp):
+    print("Your turn to attack!")
+    print("Guess a number between 1 and 3.")
     n = int(input("Enter a number: "))
     if n < 4:
         m = random.randint(1, 3)

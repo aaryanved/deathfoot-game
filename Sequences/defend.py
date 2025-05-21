@@ -1,6 +1,8 @@
 import random
 
 def defend(bp):
+    print("Your turn to defend!")
+    print("You have to guess the number the bot is going to attack with.")
     n = int(input("Enter a number: "))
     if n < 4:
         m = random.randint(1, 3)
