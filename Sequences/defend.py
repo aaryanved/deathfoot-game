@@ -5,7 +5,7 @@ def defend(bp):
     if n < 4:
         m = random.randint(1, 3)
         if n == m:
-            print("You Lost!")
+            print("The Bot Scored!")
             print("")
             bp += 1
         else:
