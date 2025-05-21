@@ -5,6 +5,7 @@ if n < 4:
     m = random.randint(1, 3)
     if n == m:
         print("You Scored!")
+        print("")
         pp += 1
     else:
         print("You didn't score.")
