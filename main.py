@@ -29,6 +29,10 @@ for i in range(10):
         pp = attack(pp)
     else:
         bp = defend(bp)
+    # Display points after every 2 rounds
+    if (i + 1) % 2 == 0:
+        print(f"After {i + 1} rounds: Player Points = {pp}, BOT Points = {bp}")
+        print("")
     if pp > 5:
         print("Player wins by a Clean Swipe!")
         break
